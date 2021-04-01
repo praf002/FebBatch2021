@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="OpticomUSA">
+
+  	<listeners>
+		<listener class-name="com.Utils.ExtentReporterNG" />
+		<listener class-name="com.Utils.transform" />
+		
+	</listeners>
+	
+	  <test thread-count="5" name="End2EndTest">
+    <classes>
+      <class name="com.TestLayer.LoginPageTest"/>
+    </classes>
+  </test> <!-- End2EndTest -->
+</suite> <!-- OpticomUSA -->
